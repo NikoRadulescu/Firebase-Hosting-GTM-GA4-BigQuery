@@ -8,7 +8,7 @@ Enable raw data from GA4 using BigQuery integration.
 - Google Tag Manager;
 - Google Analytics 4;
 
-### 1. Prepare the landing page
+### 1. Prepare the landing page ([video 0:00](https://www.youtube.com/watch?v=wNBp3Jw_ZEc&t=0s))
 
 Go to https://console.cloud.google.com/, select your project and Activate Cloud Shell then run:
 
@@ -19,11 +19,11 @@ cd App-Landing-Page
 
 hit "Open Editor" and explore the landing.
 
-### 2. Create Firebase Project
+### 2. Create Firebase Project ([video 0:34](https://www.youtube.com/watch?v=wNBp3Jw_ZEc&t=34s))
 
 Go to https://console.firebase.google.com/ and hit "Add project", select your GCP Project or create a new one. Enable analytics -> Create a new account or select your GA account. Next and you ready.
 
-### 3. Host the landing page on Firebase Hosting
+### 3. Host the landing page on Firebase Hosting ([video 1:15](https://www.youtube.com/watch?v=wNBp3Jw_ZEc&t=75s))
 
 Back to GCP Cloud Shell, just run:
 
@@ -44,7 +44,7 @@ firebase deploy --only hosting
 
 If everything goes fine you will receive a Hosting URL (click on that link : https://{gcp_project_id}.web.app
 
-### 4. Setup Google Tag Manager
+### 4. Setup Google Tag Manager ([video 2:15](https://www.youtube.com/watch?v=wNBp3Jw_ZEc&t=135s))
 
 Go to: https://tagmanager.google.com and create a new account. 
 
@@ -53,7 +53,7 @@ Fill the name, country, container name and select web -> hit "Create" and accept
 You will receive a javascript snippet for gtm client side. Copy the code
 and let's implement it to our landing.
 
-### 5. Implement GTM and redeploy the landing page
+### 5. Implement GTM and redeploy the landing page ([video 2:42](https://www.youtube.com/watch?v=wNBp3Jw_ZEc&t=162s))
 
 Back on GCP Cloud Shell, hit "Open Editor" and select "index.html". 
 
@@ -70,7 +70,7 @@ firebase deploy --only hosting
 Install Tag Assistant Legacy (by Google) extension for Chrome. Check if GTM it's running on your website (using Chrome -> Settings -> Developer Tools -> Network and reload the page) or using the Tag Assistant Legacy (by Google) extension.
 
 
-### 6. Enable GTM + GA4 integration
+### 6. Enable GTM + GA4 integration ([video 3:38](https://www.youtube.com/watch?v=wNBp3Jw_ZEc&t=218s))
 
 Go to: https://analytics.google.com/ and select your Analytics Account. Go to "Admin" -> "Data Streams" -> "Add stream" -> "Web" and fill the form (Website url, Stream name and enable "Enhanced measurement"). At the end of the process you will receive the "Measurement ID" (copy this). 
 
@@ -78,7 +78,7 @@ Go to: https://tagmanager.google.com and select your Tag Manager Account. Go to 
 
 Hit "Submit" and Publish the new GTM version.
 
-### 7. Enable GA4 + BigQuery Integration
+### 7. Enable GA4 + BigQuery Integration ([video 5:00](https://www.youtube.com/watch?v=wNBp3Jw_ZEc&t=300s))
 
 Go to: https://analytics.google.com/ and select your Analytics Account. Go to "Admin" -> "BigQuery Linking" -> "Link" -> "Choose a BigQuery project" and "Location" and hit "Next" -> then on "Frequency" choose what you need (pay attention because on "Streaming" you will have extra costs - check out documentation).
 
