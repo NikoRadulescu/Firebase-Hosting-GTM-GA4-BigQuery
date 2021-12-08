@@ -1,4 +1,4 @@
-# Step by step tutorial
+# GMP feat GCP: Firebase Hosting, GTM, GA4 and BigQuery 
 
 Create a landing page. Add GTM and GA4. Publish the landing page on the internet using Firebase Hosting. 
 Enable raw data from GA4 using BigQuery integration. 
@@ -7,6 +7,9 @@ Enable raw data from GA4 using BigQuery integration.
 - A Google Cloud Platform project / Firebase console;
 - Google Tag Manager;
 - Google Analytics 4;
+
+[![Youtube Tutorial](https://github.com/NikoRadulescu/Firebase-Hosting-GTM-GA4-BigQuery/blob/7b39144378feefe9ccf1b35fb93a9b12e5b59075/intro.jpg)](https://www.youtube.com/watch?v=wNBp3Jw_ZEc)
+
 
 ### 1. Prepare the landing page ([video 0:00](https://www.youtube.com/watch?v=wNBp3Jw_ZEc&t=0s))
 
@@ -44,6 +47,9 @@ firebase deploy --only hosting
 
 If everything goes fine you will receive a Hosting URL (click on that link : https://{gcp_project_id}.web.app
 
+[![Landing](https://github.com/NikoRadulescu/Firebase-Hosting-GTM-GA4-BigQuery/blob/7b39144378feefe9ccf1b35fb93a9b12e5b59075/landing.jpg)](https://www.youtube.com/watch?v=wNBp3Jw_ZEc)
+
+
 ### 4. Setup Google Tag Manager ([video 2:15](https://www.youtube.com/watch?v=wNBp3Jw_ZEc&t=135s))
 
 Go to: https://tagmanager.google.com and create a new account. Fill the name, country, container name and select web -> hit "Create" and accept GTM Terms of Service Agreement. You will receive a javascript snippet for gtm client side. Copy the code and let's implement it to our landing.
@@ -76,6 +82,8 @@ Hit "Submit" and Publish the new GTM version.
 Go to: https://analytics.google.com/ and select your Analytics Account. Go to "Admin" -> "BigQuery Linking" -> "Link" -> "Choose a BigQuery project" and "Location" and hit "Next" -> then on "Frequency" choose what you need (pay attention because on "Streaming" you will have extra costs - check out documentation).
 
 After some time (in our case one day) on GCP -> BigQuery we will have consolidate all the raw data from GA4
+  
+[![BigQuery GA4 Raw Data](https://github.com/NikoRadulescu/Firebase-Hosting-GTM-GA4-BigQuery/blob/7b39144378feefe9ccf1b35fb93a9b12e5b59075/bigquery.jpg)](https://www.youtube.com/watch?v=wNBp3Jw_ZEc)
 
 
 Enjoy it!
