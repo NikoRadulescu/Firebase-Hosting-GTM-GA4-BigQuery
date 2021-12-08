@@ -46,20 +46,13 @@ If everything goes fine you will receive a Hosting URL (click on that link : htt
 
 ### 4. Setup Google Tag Manager ([video 2:15](https://www.youtube.com/watch?v=wNBp3Jw_ZEc&t=135s))
 
-Go to: https://tagmanager.google.com and create a new account. 
-
-Fill the name, country, container name and select web -> hit "Create" and accept GTM Terms of Service Agreement
-
-You will receive a javascript snippet for gtm client side. Copy the code
-and let's implement it to our landing.
+Go to: https://tagmanager.google.com and create a new account. Fill the name, country, container name and select web -> hit "Create" and accept GTM Terms of Service Agreement. You will receive a javascript snippet for gtm client side. Copy the code and let's implement it to our landing.
 
 ### 5. Implement GTM and redeploy the landing page ([video 2:42](https://www.youtube.com/watch?v=wNBp3Jw_ZEc&t=162s))
 
-Back on GCP Cloud Shell, hit "Open Editor" and select "index.html". 
-
-You will copy the first snippet of gtm js code, and paste it as high in the <head> of the page as possible;
-
-You will copy the second snippet of gtm nojs code, and paste it immediatly after the opening <body> tag;
+Back on GCP Cloud Shell, hit "Open Editor" and select "index.html":
+- You will copy the first snippet of gtm js code, and paste it as high in the <head> of the page as possible;
+- You will copy the second snippet of gtm nojs code, and paste it immediatly after the opening <body> tag;
 
 Save and hit "Open Terminal", then redeploy your landing page.
 
